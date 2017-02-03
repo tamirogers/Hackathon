@@ -1,0 +1,129 @@
+
+#video_box {
+    float: left;
+
+
+}
+
+#video_overlays {
+    margin-top: -8px;
+    margin-left: 215px;
+/*    margin:0 auto;*/
+    width: 1025px;
+    min-height: 44px;
+/*    background-color: #fff;*/
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 300000;
+}
+/*
+span {
+    display: inline-block;
+    margin: auto;
+}*/
+
+.mapIt {
+	  
+	  background-color: #ffffcc;
+	background-size: 12px;
+	text-decoration-color: pink;
+
+}
+
+td {
+	color: white;
+}
+
+th {
+		color:  #ffffcc;
+		text-shadow: 2px 2px #ff0000
+		font-size: 130%;
+}
+
+.sunLight {
+	color:  #ffffcc;
+
+
+}
+
+body {
+	background-repeat: no-repeat;
+    background-size: 100%;
+        background-attachment: fixed;
+    background-position: center;
+
+}
+
+img {
+    margin: auto;
+    width: 50%;
+    /*    border: 3px solid green;
+*/
+    padding: 10px;
+}
+
+.backTo {
+	text-decoration-color: white;
+}
+.container {
+/*	position: relative;*/
+	margin-top: 55px;
+    margin-left: 40px;
+    margin-right: 150px;
+    margin-bottom: 100px
+}
+
+.container1 {
+	/*position: relative;*/
+/*		margin-top: 0px;*/
+    margin-left: -22px;
+    margin-right: 150px;
+    margin-bottom: 100px
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.buttonOne {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #fff2ff;
+    font-size: 15px;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+}
+
+.buttonOne:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.inputMe {
+    {
+        width: 60%;
+        margin-right: 30%;
+        margin-left: 30%;
+        background-color: green
+    }
+}
+
+
+/*<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="polina.webm" type="video/webm">
+    <source src="polina.mp4" type="video/mp4">
+</video>*/

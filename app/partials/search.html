@@ -1,0 +1,95 @@
+<!-- <h1> Trail Search</h1> -->
+<!-- <span>
+<img src="/app/styles/images/topLogo.jpg" alt="title" /> style="margin:30 auto"  </span> -->
+<div class="inputMe" align=center>
+    <input class="inputMe" ng-model='vm.findPlace' />
+    <!-- getmovies function From the controller  -->
+    <button class="buttonOne" ng-click="vm.locationPicked(vm.findPlace)"> Search City Name </button>
+</div>
+<!-- // movieresults came from the controller -->
+<div ng-repeat='data in vm.locationResults | limitTo:5'>
+    <div class="container">
+
+        <body background="app/styles/images/yosemite.jpg">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>City: </th>
+                        <td> {{ data.city }} </td>
+                        <th>Trail Name: </th>
+                        <td> {{ data.name }} </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Directions: </th>
+                        <td> {{ data.directions }} </td>
+                    </tr>
+                </thead>
+                <!-- 	<tbody>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody> -->
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Activities: </th>
+                        <td> {{ data.activities[0].activity_type_name }} </td>
+                    </tr>
+                    <th> Trail Description: </th>
+                    <td> {{ data.activities[0].description }} </td>
+                </thead>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                    </tr>
+                    
+
+                    <th> Website: </th> 
+                    <td> <a ng-href="{{ data.activities[0].url }}" target="_blank">{{ data.activities[0].url }} </a> </td>
+                    
+
+                    <!-- <td> {{ data.activities[0].url }} </td> -->
+                 
+                </thead>
+            </table>
+            
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                     
+                        <button class="mapIt">
+                            <a target="_blank" href="https://www.google.com/maps?q={{ data.lat }},{{ data.lon }}"> Click here to MAP your location</a>
+                        </button>
+                        
+                        <!-- <td>  {{ data.lat }}  {{ data.lon }} </td> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+<!--            <div> <input class="inputMe2" ng-model='vm.findPlace' />
+            <button class="buttonOne" ng-click="vm.getOtherData(vm.findPlace)"> Search City Name </button> </div> -->
+
+            <div><a class="sunLight" ui-sref="other( {movieDetailId:  '{{data.sun}}'  } )">CLICK FOR SUNRISE AND SUNSET TIMES</a></div>
+    </div>
+</div>
+<!-- This appends to new page.  movieDetailId came from the state in ap.js   -->
+<!-- 	<button><a ui-sref="other ({movieDetailId:  '{{data.imdbID}}'  })">Look for More Details</a></button> -->
+<!-- <pre>{{vm.movieresults | json}}</pre>  used this for checking the json-->
+<div class="well" ui-view></div>

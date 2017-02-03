@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Search</title>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="/app/styles/styles.css">
+<!-- endinject -->
+</head>
+
+
+<!-- <div id="rightView" ng-show="$state.current.other === 'app/styles/images/yosemite.jpg' ">
+    <div ui-view autoscroll="false"></div> -->
+
+
+<body background="app/styles/images/yosemite.jpg">
+<!-- background="app/styles/images/globe.jpg" -->
+
+</div>
+
+
+
+
+<div class="container1">
+
+
+<div class="fullscreen-bg" id="wrap_video">
+<!-- <div id="video_box"> -->
+<div id="video_overlays" ui-view> </div>
+    <video loop muted autoplay poster="" class="fullscreen-bg__video">
+        <source src="app/styles/images/hikersE.mp4" type="video/webm">
+    </video>
+
+</div> </div>
+
+</div><!-- </div> -->
+
+
+
+
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<!-- endbower -->
+
+<!-- <button type="button" class="btn btn-danger">button</button> -->
+
+<!-- inject:js -->
+<script src="/app/app.js"></script>
+<script src="/app/location.controller.js"></script>
+<script src="/app/other.controller.js"></script>
+<script src="/app/travel.service.js"></script>
+<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- endinject -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- <input ng-model='vm.findPlace'/>   -->
+
+<div class="container">
+<h1> Maximize Your Daylight </h1>
+
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th>Today's Sunrise: </th>
+			<td>  {{ vm.otherResults[3].sunrise }} </td>
+		</tr>
+	
+
+		<th>Today's Sunset:  </th>
+			<br> 
+		<td> {{ vm.otherResults[1].sunset }}   </td>
+	</thead>
+
+</table>
+
+
+
+<!-- <div> {{ vm.otherResults[1].sunset }} </div>
+<div>{{ vm.otherResults[3].sunrise }} </div> -->
+<!--     <p>{{vm.otherResults.sunsets[1]}}</p> -->
+<!--     <p>{{vm.otherResults.Awards}}</p>
+    <p>{{vm.otherResults.Metascore}}</p>
+    <p>{{vm.otherResults.Rated}}</p>
+ -->
+<!-- ui-view is used with ui-sref to bind to another page -->
+
+	<br> 
+<div class="well" ui-view> </div>
+<!--  ui-sref jumps you to another state, this would also work with $state $state.go -->
+<div> <a style="color:white;" class="backTo" ui-sref="search">back to search</a></div>
+</div>
